@@ -40,7 +40,7 @@ form.onsubmit = (event) => {
 function convertCurrency(amount, price, symbol){
     try{
         // Exibe o valor convertido no footer
-        description.textContent = `${symbol} 1 = ${formatCurrencyBRL(price)}`
+        description.textContent = `${symbol} 1 = ${formatCurrency(price)}`
        
         // Calcula o total da conversão
         let total = amount * price
